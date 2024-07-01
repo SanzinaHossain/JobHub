@@ -1,21 +1,17 @@
-import "../Home.css"
+import { BannerStyles } from "./BannerStyles"
 
 export default function BannerText() {
   return (
-    <div className="flex flex-col justify-center lg:py-0 py-5">
-      <p className="text-3xl text-[#570987]">One Step Closer To Your</p>
-      <p className="text-4xl text-[#570987] font-bold mt-5 pacifico-regular">
-        Dream Job
-      </p>
-      <p className="text-justify text-black mt-5">
+    <div className={BannerStyles.bannerTextContainer}>
+      <p className={BannerStyles.bannerFirstText}>One Step Closer To Your</p>
+      <p className={BannerStyles.bannerSecondText}>Dream Job</p>
+      <p className={BannerStyles.bannerThirdText}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos excepturi
         sit explicabo obcaecati doloremque voluptate deleniti maiores soluta vel
         saepe, ad facere assumenda quae quis nemo hic. Eveniet, consectetur
         sapiente.
       </p>
-      <button className="border-2 border-[#570987] hover:bg-[#570987] text-[#570987] p-3 rounded-lg hover:text-white font-bold mt-5 w-32">
-        Search Job
-      </button>
+      <button className={BannerStyles.bannerButton}>Search Job</button>
     </div>
   )
 }
