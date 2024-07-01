@@ -5,12 +5,17 @@ import "./index.css"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Jobs from "./Components/Screens/Jobs/Jobs.jsx"
 import Blog from "./Components/Screens/Blog/Blog.jsx"
+import Home from "./Components/Screens/Home/Home.jsx"
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
+      {
+        path: "/home",
+        element: <Home />,
+      },
       {
         path: "/jobs",
         element: <Jobs />,

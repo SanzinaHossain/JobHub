@@ -1,5 +1,5 @@
 export const HeaderStyles = {
-  headerContainer: "bg-white  p-5 fixed top-0 w-full   ",
+  headerContainer: "bg-white  p-5 sticky top-0 w-full  ",
   container:
     " duration-1000 absolute md:static md:flex  justify-around  px-3  ",
   pathText: "mr-10 text-[#B95CF4] text-xl ",
