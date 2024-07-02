@@ -2,7 +2,7 @@ import "../Home.css"
 
 export const BannerStyles = {
   bannerContainer:
-    "grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 w-full lg:px-24 px-5 justify-evenly ",
+    "grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 w-full lg:px-24 px-5 justify-evenly bg-purple-50 ",
 
   // banner Image
   bannerImageContainer: "justify-center hidden md:flex lg:flex h-full",
