@@ -1,7 +1,3 @@
-import React from "react"
-
-const Jobs = () => {
-  return <div>jobs</div>
+export default function Jobs() {
+  return <></>
 }
-
-export default Jobs
