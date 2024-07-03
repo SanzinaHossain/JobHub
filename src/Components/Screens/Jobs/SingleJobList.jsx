@@ -26,7 +26,7 @@ export default function SingleJobList({ job }) {
 
       {/* details button  */}
       <div>
-        <JobDetailsButton />
+        <JobDetailsButton id={job.id} job={job} />
       </div>
     </div>
   )

@@ -10,5 +10,5 @@ export const styles = {
   imageStyle: "h-8",
   jobNameStyle: "text-black font-bold text-xl mt-3",
   companyNameStyle: "text-xl text-gray-600 mt-3",
-  jobSalaryContainer: "flex gap-x-5 mt-3",
+  jobSalaryContainer: "flex gap-x-5 mt-4 mb-1",
 }

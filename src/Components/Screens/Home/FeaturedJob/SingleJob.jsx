@@ -16,7 +16,7 @@ export default function SingleJob({ job }) {
         <TextWithIcon image={locationImage} text={job.location} />
         <TextWithIcon image={moneyImage} text={`Salary: ${job.salary}`} />
       </div>
-      <JobDetailsButton />
+      <JobDetailsButton id={job.id} job={job} />
     </div>
   )
 }
