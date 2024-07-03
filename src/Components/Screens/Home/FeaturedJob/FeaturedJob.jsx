@@ -3,8 +3,13 @@ import { styles } from "./Styles"
 import { sectionHeaderData } from "./Data"
 import { AllJobData } from "../../Data"
 import SingleJob from "./SingleJob"
+import { useNavigate } from "react-router-dom"
 
 export default function FeaturedJob() {
+  const navigate = useNavigate()
+  const handleAllJob = () => {
+    navigate("/jobs")
+  }
   return (
     <div className={styles.container}>
       <SectionHeader
@@ -17,7 +22,7 @@ export default function FeaturedJob() {
         )}
       </div>
       <div className={styles.buttonStyle}>
-        <button>See All Jobs...</button>
+        <button onClick={handleAllJob}>See All Jobs...</button>
       </div>
     </div>
   )
