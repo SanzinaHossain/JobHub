@@ -1,12 +1,9 @@
-import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs"
 import { FooterStyle } from "./FooterStyle"
-
+import socialImage from "../../../assets/icons/social.png"
 export default function FooterSocialMediaIcon() {
   return (
     <div className={FooterStyle.footerIconContainer}>
-      <BsFacebook className={FooterStyle.footerIconStyle} />
-      <BsTwitter className={FooterStyle.footerIconStyle} />
-      <BsInstagram className={FooterStyle.footerIconStyle} />
+      <img src={socialImage} />
     </div>
   )
 }

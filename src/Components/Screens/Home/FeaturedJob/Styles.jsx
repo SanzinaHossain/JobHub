@@ -6,7 +6,7 @@ export const styles = {
 
   //   single Job style.........
   singleJobContainer:
-    "border-2 border-fuchsia-100 rounded-lg  w-[500px] h-[320px] p-5",
+    "border-2 border-fuchsia-100 rounded-lg  lg:w-[500px] h-[320px] p-5  md:w-[500px]  w-[400px] ",
   imageStyle: "h-8",
   jobNameStyle: "text-black font-bold text-xl mt-3",
   companyNameStyle: "text-xl text-gray-600 mt-3",
