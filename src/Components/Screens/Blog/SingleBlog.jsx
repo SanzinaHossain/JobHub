@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom"
+import { Styles } from "./Styles"
 
 export default function SingleBlog({ blog }) {
   const navigate = useNavigate()
@@ -6,15 +7,15 @@ export default function SingleBlog({ blog }) {
     navigate(`/blogDetails/${id}`, { state: { blog } })
   }
   return (
-    <div className="w-[600px]   rounded-lg">
+    <div className={Styles.singleBlogContainer}>
       <img src={blog.image} />
-      <h1 className="text-black text-xl mt-3">
+      <h1 className={Styles.dateStyle}>
         <strong>Featured - </strong> {blog.date}
       </h1>
-      <h1 className="text-black text-3xl mt-3">{blog.title} </h1>
+      <h1 className={Styles.titleStyle}>{blog.title} </h1>
       <button
         onClick={() => handleBlog(blog.id, blog)}
-        className="text-purple-900 mt-3 text-xl"
+        className={Styles.buttonStyle}
       >
         Continue Reading ....
       </button>
