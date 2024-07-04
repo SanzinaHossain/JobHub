@@ -8,5 +8,5 @@ export const FooterStyle = {
   footerIconStyle: "text-3xl text-white",
   footerIconContainer: "flex justify-center items-center gap-5 mt-2",
   footerNavTitle: "text-xl  text-white font-bold",
-  footerLinkStyle: "link link-hover",
+  footerLinkStyle: "link link-hover text-white",
 }

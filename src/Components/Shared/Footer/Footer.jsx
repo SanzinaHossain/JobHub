@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="footer">
         <aside>
           <p className={FooterStyle.footerTitle}>JobHub</p>
-          <p>
+          <p className="text-white">
             There are many variations of passages <br />
             of Lorem Ipsum , but the majority have
             <br /> suffered alteration in some form.
@@ -23,10 +23,10 @@ export default function Footer() {
       </div>
       <div className={FooterStyle.footerDivider}></div>
       <div className={FooterStyle.footerReserved}>
-        <p className="col-span-4">
+        <p className="col-span-4 text-white">
           @2024 JobHub, All Rights Reserved by Sanzina
         </p>
-        <p>Powered By JobHub</p>
+        <p className="text-white">Powered By JobHub</p>
       </div>
     </footer>
   )
