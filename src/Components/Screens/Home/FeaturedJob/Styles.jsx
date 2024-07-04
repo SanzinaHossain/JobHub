@@ -1,5 +1,6 @@
 export const styles = {
-  container: "w-full bg-white pt-14 pb-10 flex flex-col items-center ",
+  container:
+    "w-full bg-white pt-14 pb-10 flex flex-col items-center lg:px-0 px-10 ",
   jobListContainer: "flex flex-wrap justify-center items-center py-10 gap-3",
   buttonStyle:
     "border-2 p-3 rounded-lg bg-purple-300 text-black mt-3 flex justify-center items-center w-52",
