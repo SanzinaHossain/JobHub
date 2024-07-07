@@ -8,6 +8,8 @@ import Home from "./Components/Screens/Home/Home.jsx"
 import Jobs from "./Components/Screens/Jobs/Jobs.jsx"
 import JobDetails from "./Components/Screens/JobDetails/JobDetails.jsx"
 import BlogDetails from "./Components/Screens/BlogDetails/BlogDetails.jsx"
+import Login from "./Components/Screens/Registration/Login.jsx"
+import Register from "./Components/Screens/Registration/Register.jsx"
 
 const router = createBrowserRouter([
   {
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
       {
         path: "/blogDetails/:blogId",
         element: <BlogDetails />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
       },
     ],
   },
