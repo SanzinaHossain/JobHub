@@ -11,8 +11,9 @@ export default function Login() {
     <div class=" w-full h-full bg-white ">
       <DynamicBanner
         title="Login"
-        subTitle="Create an account & Start posting or hiring talents"
+        subTitle="Login To Explore The Job Category "
       />
+
       <div className="bg-white w-full h-full p-10 flex justify-center items-center gap-x-5">
         <div>
           <img src={login}></img>

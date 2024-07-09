@@ -13,6 +13,28 @@ export default function Form({ type }) {
           : handleSubmit(registerOnSubmit)
       }
     >
+      {type != "login" ? (
+        <div class="form-control w-full ">
+          <input
+            {...register("name", {
+              required: {
+                value: true,
+                message: "Name is required",
+              },
+            })}
+            type="text"
+            placeholder="Enter Your name"
+            className="border-2 border-gray-200 p-3 w-full text-black bg-white rounded-lg "
+          />
+          <label class="label">
+            {errors.name?.type === "required" && (
+              <span className="label-text-alt text-red-700">
+                {errors.name.message}
+              </span>
+            )}
+          </label>
+        </div>
+      ) : null}
       <div class="form-control w-full ">
         <input
           {...register("email", {
