@@ -82,7 +82,7 @@ export default function LoginHooks() {
     signInWithPopup(auth, provider)
       .then((result) => {
         const data = result.user
-        setLoginUser(data)
+        setUser(data)
         navigate("/jobs")
       })
       .catch((error) => {
