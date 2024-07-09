@@ -13,9 +13,10 @@ export default function Register() {
         subTitle="Create an account & Start posting or hiring talents"
       />
       <div className="bg-white w-full h-full p-10 flex justify-center items-center">
-        <div>
-          <img src={register}></img>
+        <div className="hidden lg:block">
+          <img src={register} alt="Register" />
         </div>
+
         <div class="mx-auto shadow-2xl  h-auto rounded-xl bg-white border-2 border-purple-100 p-10 w-[500px] ">
           <h1 class="text-black font-bold text-center text-3xl ">
             Register As New User
