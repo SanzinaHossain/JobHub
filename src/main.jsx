@@ -11,6 +11,7 @@ import BlogDetails from "./Components/Screens/BlogDetails/BlogDetails.jsx"
 import Login from "./Components/Screens/Registration/Login.jsx"
 import Register from "./Components/Screens/Registration/Register.jsx"
 import AuthProvider from "./Context/AuthProvider.jsx"
+import PrivateRoute from "./Components/Shared/PrivateRoute/PrivateRoute.jsx"
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/jobDetails/:jobId",
-        element: <JobDetails />,
+        element: (
+          <PrivateRoute>
+            <JobDetails />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/blog",
@@ -35,7 +40,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/blogDetails/:blogId",
-        element: <BlogDetails />,
+        element: (
+          <PrivateRoute>
+            <BlogDetails />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/login",
