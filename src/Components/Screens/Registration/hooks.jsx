@@ -43,7 +43,6 @@ export default function LoginHooks() {
   // Login set user
   useEffect(() => {
     const hello = onAuthStateChanged(auth, (currentUser) => {
-      console.log("currentUser:", currentUser)
       setUser(currentUser)
     })
     return () => {
@@ -91,18 +90,20 @@ export default function LoginHooks() {
       })
   }
 
-  //   Google Logout Function
-  const handleGoogleLogOut = () => {
+  //    Logout Function
+  const handleLogOut = () => {
     signOut(auth)
       .then((result) => {
-        setLoginUser(null)
+        console.log("Logout Done")
+        setUser(null)
+        navigate("/login")
       })
       .catch((error) => {})
   }
 
   return {
     handleGoogleLogin,
-    handleGoogleLogOut,
+    handleLogOut,
     setLoginUser,
     loginUser,
     register,

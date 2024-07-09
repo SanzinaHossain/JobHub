@@ -1,11 +1,16 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { HeaderStyles } from "./HeaderStyles"
 import HeaderIcon from "./HeaderIcon"
 import { routes } from "./HeaderData"
 import HeaderLink from "./HeaderLink"
+import { AuthContext } from "../../../Context/AuthProvider"
+import LoginHooks from "../../Screens/Registration/hooks"
+import { NavLink } from "react-router-dom"
 
 export default function Header() {
+  const { handleLogOut } = LoginHooks()
   const [open, setOpen] = useState(false)
+  const { user } = useContext(AuthContext)
 
   return (
     <nav className={HeaderStyles.headerContainer}>
@@ -23,8 +28,15 @@ export default function Header() {
             <HeaderLink key={route.id} route={route} />
           ))}
         </div>
+
         <div className={HeaderStyles.buttonContainer}>
-          <button>Find Jobs</button>
+          {user ? (
+            <button onClick={handleLogOut}>Logout</button>
+          ) : (
+            <NavLink to="/login" className={HeaderStyles.loginLink}>
+              Login
+            </NavLink>
+          )}
         </div>
       </ul>
     </nav>
