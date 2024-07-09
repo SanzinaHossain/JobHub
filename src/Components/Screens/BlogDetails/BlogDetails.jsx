@@ -7,6 +7,7 @@ import { Styles } from "./Styles"
 export default function BlogDetails() {
   const location = useLocation()
   const blogData = location.state.blog
+
   return (
     <div>
       <DynamicBanner title="Blog Information" />

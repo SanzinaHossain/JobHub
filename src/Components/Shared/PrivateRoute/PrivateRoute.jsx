@@ -4,6 +4,7 @@ import { AuthContext } from "../../../Context/AuthProvider"
 
 export default function PrivateRoute({ children }) {
   const { user } = useContext(AuthContext)
+
   if (user) {
     return children
   }

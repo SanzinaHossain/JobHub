@@ -10,7 +10,7 @@ import {
 } from "firebase/auth"
 import app from "../../../firebase/firebase.init"
 import { useContext, useEffect, useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useLocation, useNavigate } from "react-router-dom"
 import { useForm } from "react-hook-form"
 import { AuthContext } from "../../../Context/AuthProvider"
 
@@ -20,6 +20,7 @@ export default function LoginHooks() {
   const provider = new GoogleAuthProvider()
   const navigate = useNavigate()
   const { setUser } = useContext(AuthContext)
+
   const {
     register,
     formState: { errors },
@@ -94,7 +95,6 @@ export default function LoginHooks() {
   const handleLogOut = () => {
     signOut(auth)
       .then((result) => {
-        console.log("Logout Done")
         setUser(null)
         navigate("/login")
       })

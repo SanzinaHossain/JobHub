@@ -7,7 +7,7 @@ import PrimaryDescription from "./PrimaryDescription"
 
 export default function JobDetails() {
   const location = useLocation()
-  const data = location.state?.job
+  const data = location.state.job
   return (
     <div>
       <DynamicBanner title="Job Details" />
