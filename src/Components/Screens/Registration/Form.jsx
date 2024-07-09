@@ -1,5 +1,6 @@
 import React from "react"
 import LoginHooks from "./hooks"
+import { FormStyles } from "./FormStyles"
 
 export default function Form({ type }) {
   const { handleSubmit, loginOnSubmit, registerOnSubmit, errors, register } =
@@ -24,11 +25,11 @@ export default function Form({ type }) {
             })}
             type="text"
             placeholder="Enter Your name"
-            className="border-2 border-gray-200 p-3 w-full text-black bg-white rounded-lg "
+            className={FormStyles.inputContainer}
           />
           <label class="label">
             {errors.name?.type === "required" && (
-              <span className="label-text-alt text-red-700">
+              <span className={FormStyles.inputErrorText}>
                 {errors.name.message}
               </span>
             )}
@@ -49,16 +50,16 @@ export default function Form({ type }) {
           })}
           type="email"
           placeholder="Enter Your Email"
-          className="border-2 border-gray-200 p-3 w-full text-black bg-white rounded-lg "
+          className={FormStyles.inputContainer}
         />
-        <label class="label">
+        <label className="label">
           {errors.email?.type === "required" && (
-            <span className="label-text-alt text-red-700">
+            <span className={FormStyles.inputErrorText}>
               {errors.email.message}
             </span>
           )}
           {errors.email?.type === "pattern" && (
-            <span className="label-text-alt text-red-700">
+            <span className={FormStyles.inputErrorText}>
               {errors.email.message}
             </span>
           )}
@@ -69,7 +70,7 @@ export default function Form({ type }) {
         <input
           type="password"
           placeholder="Enter Your Password"
-          className="border-2 border-gray-200 p-3 w-full text-black bg-white rounded-lg "
+          className={FormStyles.inputContainer}
           {...register("password", {
             required: {
               value: true,
@@ -83,12 +84,12 @@ export default function Form({ type }) {
         />
         <label className="label">
           {errors.password?.type === "required" && (
-            <span className="label-text-alt text-red-700 bold">
+            <span className={FormStyles.inputErrorText}>
               {errors.password.message}
             </span>
           )}
           {errors.password?.type === "minLength" && (
-            <span className="label-text-alt text-red-700 bold">
+            <span className={FormStyles.inputErrorText}>
               {errors.password.message}
             </span>
           )}
@@ -97,7 +98,7 @@ export default function Form({ type }) {
 
       <input
         value={type === "login" ? "Login" : "Register"}
-        className="border-2 border-purple-700 py-1 w-full rounded-lg hover:bg-purple-700 text-black mt-3 justify-center gap-x-3 items-center flex text-2xl hover:text-white"
+        className={FormStyles.buttonContainer}
         type="submit"
       />
     </form>
