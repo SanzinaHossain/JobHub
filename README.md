@@ -4,17 +4,17 @@ Live site link:[https://jobsearchinghub.netlify.app/](https://jobsearchinghub.ne
 
 ## Contents of Final Project websites
 
-- Home : Contains all information about tools Manufacture and items
-- Blogs: This is use for question andswer
-- About: About myself and my goal
-- Manage Items : Manage all items increase their value and order etc.
-- Login: User loging using firebase
+- Home : Contains all information about job category and a minimum number of job lists 
+- Blogs: Blogs which were written by well know talent hub
+- Jobs: All Jobs list and their details
+- Login: User login using firebase authentication
 
 ## Library and frameworks
 
 - Tailwind Daisy Ui
 - React-Tailwind
 - Custom Css hooks
-- React router
+- React router dom
 - Firebase Authentication for login registration
-- Mongodb atlas
+- context
+- javascript
