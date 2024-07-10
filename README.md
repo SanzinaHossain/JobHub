@@ -1,6 +1,6 @@
 # JOBHUB (A Job Searching Website)
 
-Live site link:[https://jobsearchinghub.netlify.app/](https://jobsearchinghub.netlify.app/)
+Live site link:[ https://jobsearchinghub.netlify.app/ ]( https://jobsearchinghub.netlify.app/ )
 
 ## Contents of Final Project websites
 
